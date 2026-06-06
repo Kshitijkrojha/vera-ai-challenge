@@ -141,7 +141,7 @@ def is_auto_reply(message: str) -> bool:
     patterns = [
         "thank you for contacting", "our team will respond", "this is an automated",
         "auto-reply", "out of office", "we will get back to you", "आपका संदेश प्राप्त",
-        "we received your message", "automated response",
+        "we received your message", "automated response","away from my phone","away from phone","currently unavailable","on leave","vacation","travelling","traveling",
     ]
     msg = message.lower()
     return any(p in msg for p in patterns)
